@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: grey;
+}
+.containerR{
+    background: #fff;
+    border: 1px solid black;
+    max-width: 700px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 2px 2px #bababa;
+    /* height: fit-content; */
+}
+#nameR{
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 40px 0 15px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.basics{
+    margin: 5px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.socials{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.socials a{
+    font-weight: bold;
+    text-decoration: underline;
+    color: black;
+}
+.heading{
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: left;
+    border-bottom: 2px solid black;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.para{
+    text-align: justify;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+p{
+    font-size: 13px;
+}
+.eduDivContainer{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.eduDivs{
+    position: relative;
+    height: 40px;
+}
+.eduName{
+    position: absolute;
+    left: 0;
+}
+.eduCourse{
+    position: absolute;
+    left: 21%;
+}
+.eduLocation{
+    position: absolute;
+    right: 0;
+}
+.eduMarks{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.eduYears{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.skillUL{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.projectTitle{
+    font-weight: bold;
+    font-size: 1rem;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 3px;
+}
+.projectPara{
+    text-align: justify;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#saveBtn{
+    font-weight: bold;
+    padding: 10px 45px;
+    border-radius: 35px;
+    margin: 30px 0;
+    background: rgb(52, 45, 74);
+    border-style: none;
+    position: relative;
+    left: 46%;
+    font-size: 1.5rem;
+}

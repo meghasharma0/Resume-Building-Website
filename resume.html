@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="resumeStyling.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script type="module" src="resumeScript.js"></script>
+</head>
+<body>
+
+    <div class="container-fluid text-center containerR" id="target">
+
+        <h1 id="nameR">MEGHA SHARMA</h1>
+        <p class="basics" id="basics">
+            <span>+91 7983713011</span> | <span>meghaalg7@gmail.com</span> | <span>Aligarh, Uttar Pradesh</span>
+        </p>
+        <p class="socials">
+            <a href="https://www.linkedin.com/in/megha-sharma-a560b5205/" target="_blank" id="linkedIn">LinkedIn</a> | <a href="https://leetcode.com/meghaalg7/"  target="_blank" id="leetcode">Leetcode</a> | <a href="https://github.com/meghasharma0"  target="_blank" id="github">Github</a>
+        </p>
+
+        <p class="objHead heading mb-2">OBJECTIVE</p>
+        <p id="objPara" class="para">
+            Enthusiastic computer science student with a strong foundation in front-end development and a passion for creating responsive web applications. Experienced in HTML, CSS, JavaScript, ReactJs  Seeking opportunities to leverage technical skills and contribute to innovative projects.
+        </p>
+
+        <p class="eduHead heading mb-2">EDUCATION</p>
+        <div class="eduDivContainer">
+            <div class="eduDivs mb-2">
+                <p class="mb-1">
+                    <span class="eduName" id="collegeSpan"><b> Chitkara University |</b> B.Tech - Information Technology</span> 
+                    <span id="collegeLocationSpan" class="eduLocation">Punjab</span>
+                    <span class="eduMarks" id="collegeMarkspan">CGPA - 9</span>
+                    <span class="eduYears" id="collegeYearspan">2020 - 2024</span>
+                </p>
+            </div>
+            <div class="eduDivs mb-2">
+                <p class="mb-1">
+                    <span class="eduName" id="school12Span"><b>Delhi Public School |</b> Intermediate - PCM</span>
+                    <span class="eduLocation" id="school12LocationSpan">Aligarh</span>
+                    <span class="eduMarks" id="school12Markspan">Percentage - 81.4%</span>
+                    <span class="eduYears" id="school12Yearspan">2017 - 2018</span>
+                </p>
+            </div>
+            <div class="eduDivs">
+                <p class="upper mb-1">
+                    <span class="eduName" id="school10Span"><b>Raghuvir Bal Mandir |</b> High School</span> 
+                    <span class="eduLocation" id="school10LocationSpan">Aligarh</span>
+                    <span class="eduMarks" id="school10Markspan">CGPA - 8.6</span>
+                    <span class="eduYears" id="school10Yearspan">2015 - 2016</span>
+                </p>
+            </div>
+        </div>
+
+        <p class="skillHead heading mb-2 mt-3">SKILLS</p>
+        <ul class="skillUL" id="skillUL">
+            <!-- <li class="text-start">Programming - Java, Python</li>
+            <li class="text-start">Web development - HTML, CSS, JavaScript, ReactJs.</li>
+            <li class="text-start">Computer Networking</li>
+            <li class="text-start">SQL</li> -->
+        </ul>
+
+        <p class="heading mb-2" id="projectHead">PROJECTS</p>
+        <p class="text-start projectTitle" id="projectTitle1">E-commerce Website for ethnic wears</p>
+        <p class="projectPara" id="projectPara1">Created a comprehensive e-commerce platform using ReactJs, showcasing a variety of ethnic wear products. Integrated product catalog, shopping cart, category filtration and search option. Implemented responsive design to ensure optimal user experience across devices.
+        </p>
+        <p class="text-start projectTitle" id="projectTitle2">Resume Builder</p>
+        <p class="projectPara" id="projectPara2">Developed a dynamic web application using HTML, CSS, and JavaScript. Empowered users to create personalized resumes with a user-friendly interface. Implemented responsive design and real-time preview of resume content.</p>
+
+        <p class="extraHead heading mb-2">EXTRACURRICULAR ACTIVITIES</p>
+        <p id="extraPara" class="para">
+            Participated in coding competitions, consistently achieving good ranks.
+        </p>
+
+        <p class="langHead heading mb-2">LANGUAGES</p>
+        <p id="langPara" class="para mb-5">
+            English (Fluent), Hindi (Native)
+        </p>
+
+    </div>
+
+    <button id="saveBtn" type="submit" class="btn btn-primary" >Save</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+<!-- const retrievedData = JSON.parse(localStorage.getItem('Student-Info')); -->
+<!-- console.log(retrievedData.Name) -->

@@ -1,0 +1,130 @@
+form{
+    width: 50%;
+    overflow-y: scroll;
+}
+form::-webkit-scrollbar-track{
+    background: red;
+}
+.formContainer{
+    display: flex;
+    justify-content: space-evenly;
+    height: 500px;
+}
+.firstSectionImageDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.firstSectionImage{
+    height: 400px;
+}
+#createResumeBtn, #createResumeBtn2{
+    font-weight: bold;
+    padding: 10px 45px;
+    border-radius: 35px;
+    margin: 30px 0;
+    background: rgb(52, 45, 74);
+    border-style: none;
+}
+#createResumeBtn2{
+    margin: 15px;
+}
+.secondSectionCol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cardDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.secondSectionImg{
+    height: 100px;
+    width: 100px;
+    margin: 10px 0 30px;
+}
+.secondSectionDivBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#templateBtn, #templateBtn2, #templateBtn3, #templateBtn4{
+    /* font-weight: bold; */
+    font-size: 0.9rem;
+    padding: 10px 45px;
+    border-radius: 35px;
+    margin: 10px 0;
+    background: rgb(105, 92, 150);
+    border-style: none;
+}
+#templateBtn:hover, #templateBtn2:hover, #templateBtn3:hover, #templateBtn4:hover{
+    background: rgb(52, 45, 74);
+} 
+.thirdSectionCol{
+    display: flex;
+    justify-content: center;
+}
+.forthSectionPara{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.forthSectionImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (max-width: 992px) {
+    #createResumeBtn{
+        margin: 30px 0;
+    }
+    .firstSectionTextDiv{
+        margin: 20px 0;
+        padding: 20px 0;
+    }
+    .firstSectionImageDiv{
+        align-items: center;
+        margin: 20px 0;
+        padding: 20px 0;
+    }
+    .secondSectionContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .secondSectionRow{
+        width: 500px;
+    }
+    .secondSectionCol{
+        margin: 10px 0;
+        /* padding: 5px 0; */
+        width: 300px;
+    }
+}
+  
+
+
+/* FORM STYLING */
+
+.progressBarForm{
+    transition: width 0.5s ease-in-out;
+}
+.hidden{
+    display: none;
+}
+#saveInfoBtn{
+    background: rgb(210, 0, 0);
+    border: none;
+    margin-top: 30px;
+}
+#saveInfoBtn:hover{
+    background: rgb(97, 0, 0);
+}
+.reviewBtn{
+    position: relative;
+    top: 15px;
+}

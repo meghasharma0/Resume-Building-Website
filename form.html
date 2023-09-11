@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+</head>
+<body>
+  <h4 class="text-center" style="margin-top: 40px;">Your Biodata</h4>
+  <div class="container-fluid p-4 mt-4 formContainer">
+    <form class="p-3" id="form">
+      <!-- BASIC INFORMATION -->
+      <h5 class="pt-3 pb-3">Basic Information</h5>
+      <div class="basicInformation">
+          <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="username" placeholder="Full Name" autocomplete="on" required>
+              <label for="username">Full Name</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="phone" placeholder="Phone" autocomplete="on" required>
+            <label for="phone">Phone</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="email" placeholder="Email address" autocomplete="on" required>
+            <label for="email">Email address</label>
+          </div>
+          <div class="mb-3">
+            <select class="form-select" id="selectState" required>
+              <option value="Select State">Select State</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <select class="form-select" id="selectCity" required>
+              <option value="Select City">Select City</option>
+            </select>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="url" class="form-control" id="linkedin" placeholder="LinkedIn (url)" required>
+            <label for="linkedin">LinkedIn (url)</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="url" class="form-control" id="github" placeholder="Github (url)" required>
+            <label for="github">Github (url)</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="url" class="form-control" id="leetcode" placeholder="Leetcode (url)" required>
+            <label for="leetcode">Leetcode (url)</label>
+          </div>
+          <div class="form-floating mb-3">
+            <textarea class="form-control" placeholder="Objective" id="objective" style="height: 100px" required></textarea>
+            <label for="objective">Objective</label>
+          </div>
+
+          <!-- EDUCATION -->
+          <h5 class="pt-3 pb-3">Education</h5>
+          <h6 class="pt-2 pb-2">College</h6>
+          <div class="row">
+            <div class="col-lg-4 form-floating mb-3">
+              <input type="text" class="form-control" id="college" placeholder="College/University" required>
+              <label for="college" style="left: 12px;">College/University</label>
+            </div>
+            <div class="col-lg-4 form-floating mb-3">
+              <input type="text" class="form-control" id="collegeBranch" placeholder="Branch" required>
+              <label for="collegeBranch" style="left: 12px;">Branch</label>
+            </div>
+            <div class="col-lg-4 form-floating mb-3">
+              <input type="text" class="form-control" id="collegeCourse" placeholder="Course" required>
+              <label for="collegeCourse" style="left: 12px;">Course</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 form-floating mb-3">
+              <input type="text" class="form-control" id="collegeLocation" placeholder="Location" required>
+              <label for="collegeLocation" style="left: 12px;">Location</label>
+            </div>
+            <div class="col-lg-4 form-floating mb-3">
+              <input type="text" class="form-control" id="collegeCgpa" placeholder="CGPA" required>
+              <label for="collegeCgpa" style="left: 12px;">CGPA</label>
+            </div>
+            <div class="col-lg-4 form-floating mb-3">
+              <input type="text" class="form-control" id="collegeYears" placeholder="From - To (Years)" required>
+              <label for="collegeYears" style="left: 12px;">From - To (Years)</label>
+            </div>
+          </div>
+          <!-- ******* -->
+          <h6 class="pt-2 pb-2">Intermediate</h6>
+          <div class="row">
+            <div class="col-lg-4 form-floating mb-3">
+              <input type="text" class="form-control" id="school12" placeholder="School" required>
+              <label for="school12" style="left: 12px;">School</label>
+            </div>
+            <div class="col-lg-4 form-floating mb-3">
+              <input type="text" class="form-control" id="subjects12" placeholder="Subjects" required>
+              <label for="subjects12" style="left: 12px;">Subjects</label>
+            </div>
+            <div class="col-lg-4 form-floating mb-3">
+              <input type="text" class="form-control" id="location12" placeholder="Location" required>
+              <label for="location12" style="left: 12px;">Location</label>
+            </div>
+            <div class="col-lg-4 form-floating mb-3">
+              <input type="text" class="form-control" id="marks12" placeholder="Marks" required>
+              <label for="marks12" style="left: 12px;">Marks (%)</label>
+            </div>
+            <div class="col-lg-4 form-floating mb-3">
+              <input type="text" class="form-control" id="years12" placeholder="Years" required>
+              <label for="years12" style="left: 12px;">Years</label>
+            </div>
+          </div>
+          <h6 class="pt-2 pb-2">High School</h6>  
+          <div class="row">
+            <div class="col-lg-4 form-floating mb-3">
+              <input type="text" class="form-control" id="school10" placeholder="School" required>
+              <label for="school10" style="left: 12px;">School</label>
+            </div>
+            <div class="col-lg-4 form-floating mb-3">
+              <input type="text" class="form-control" id="location10" placeholder="Location" required>
+              <label for="location10" style="left: 12px;">Location</label>
+            </div>
+            <div class="col-lg-4 form-floating mb-3">
+              <input type="text" class="form-control" id="marks10" placeholder="Marks" required>
+              <label for="marks10" style="left: 12px;">Marks (%)</label>
+            </div>
+            <div class="col-lg-4 form-floating mb-3">
+              <input type="text" class="form-control" id="years10" placeholder="Years" required>
+              <label for="years10" style="left: 12px;">Years</label>
+            </div>
+          </div>
+          <!-- SKILL SET -->
+          <h5 class="pt-3 pb-3">Skills</h5>
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="skillSet" placeholder="Skills" required>
+            <label for="skillSet">Skills (comma saparated)</label>
+          </div>
+        </div>
+        <!-- PROJECTS -->
+        <h5 class="pt-3 pb-3">Projects</h5>
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="projectTitle" placeholder="Project Title" required>
+          <label for="projectTitle">Project Title</label>
+        </div>
+        <div class="form-floating mb-3">
+          <textarea class="form-control" placeholder="Project Description" id="proDes" style="height: 100px" required></textarea>
+          <label for="proDes">Project Description</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="projectTitle2" placeholder="Project Title" required>
+          <label for="projectTitle2">Project Title 2</label>
+        </div>
+        <div class="form-floating mb-3">
+          <textarea class="form-control" placeholder="Project Description" id="proDes2" style="height: 100px" required></textarea>
+          <label for="proDes2">Project Description</label>
+        </div>
+        <!-- EXTRA CURRICULAR ACTIVITIES -->
+         <h5 class="pt-3 pb-3">Extra Actitivies Involved</h5>
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="extraActivities" placeholder="Extra Activities" required>
+            <label for="extraActivities">Extra Activities (comma saparated)</label>
+          </div>
+        <!-- LANGUAGES -->
+        <h5 class="pt-3 pb-3">Languages</h5>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="English" id="englishOpt" required>
+          <label class="form-check-label" for="englishOpt">English</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="hindiOpt" value="Hindi" required>
+          <label class="form-check-label" for="hindiOpt">Hindi</label>
+        </div>
+        <input type="submit" class="btn btn-primary" id="saveInfoBtn" value="SAVE INFO"></input>
+        <button class="btn btn-success reviewBtn" id="reviewBtn">REVIEW</button>
+      </form>
+      <img src="images/temp1.png" alt="" height="450px">
+    </div>
+
+    <script type="module" src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+<!--  id="saveInfoBtn" -->
